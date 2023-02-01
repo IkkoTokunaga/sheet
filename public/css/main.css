@@ -1,0 +1,141 @@
+@import url('const.css');
+@import url('init.css');
+@import url('selector.css');
+@import url('width.css');
+@import url('height.css');
+@import url('margin.css');
+
+.base {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.relative{
+    position: relative;
+}
+.hidden {
+    display: none !important;
+}
+.bd{
+    border: 1px solid var(--border-color);
+}
+
+.flex{
+    display: flex;
+}
+
+.create_table {
+    width: 100%;
+}
+
+.create_table th {
+    padding: 6px 10px;
+    background-color: var(--color-th);
+    color: var(--color-th-text);
+}
+
+.create_table td {
+    padding: 2px;
+}
+
+.head_table th {
+    padding: 6px 10px;
+    background-color: var(--color-th);
+    color: var(--color-th-text);
+}
+
+.head_table td {
+    padding: 6px 10px;
+}
+
+.list_table {
+    width: 100%;
+    height: 100%;
+}
+
+
+.list_table tr:hover{
+    background-color: #ddd;
+}
+
+.list_table th {
+    padding: 6px 10px;
+    background-color: var(--color-th);
+    color: var(--color-th-text);
+}
+.list_table td {
+    height: 100%;
+}
+
+.list_table span {
+    padding: 6px 10px;
+}
+.list_table textarea {
+    width: 95%;
+    height: 80px;
+}
+.status{
+    margin-left: 2px;
+}
+.check_label{
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 20px;
+}
+
+.body{
+    width: 95%;
+    height: 100px;
+}
+
+.center {
+    text-align: center;
+}
+
+.display_input{
+    width: 90%;
+    height: 100%;
+    display: inline-block;
+    display:flex;
+    justify-content:left;
+    align-items:top;
+
+}
+
+.search_area{
+    width: 580px;
+    margin: 0;
+    padding: 6px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #f4f4f4;
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+}
+
+.all_update_area{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #f4f4f4;
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+
+}
+
+.gray {
+    background-color:  var(--color-gray);
+}
+
+.red {
+    background-color:  var(--color-red);
+}
+
+
+

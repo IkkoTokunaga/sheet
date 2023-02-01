@@ -1,0 +1,107 @@
+@import url('main.css');
+
+textarea{
+    width: 400px;
+}
+h1 {
+    margin: 6px;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: underline;
+}
+h4{
+    margin: 6px 0 4px 0;
+    padding: 0;
+    border-bottom: 1px solid #000;
+    max-width: 414px;
+
+}
+
+th {
+    background-color: #aaa;
+    border: 1px solid #000;
+}
+
+td {
+    border: 1px solid #000;
+}
+
+li {
+    max-width: 440px;
+    list-style-type: none;
+}
+
+#save_btn{
+    position: fixed;
+    bottom: 8px;
+    left: 8px;
+    width: 60px;
+    height: 40px;
+}
+
+#edit_btn{
+    position: fixed;
+    bottom: 60px;
+    left: 8px;
+    width: 60px;
+    height: 40px;
+}
+
+.sign{
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    width: 120px;
+}
+
+.sheet_detail_box {
+    margin-top: 20px;
+}
+
+.section-line{
+    height: 1px;
+    padding: 0;
+    margin: 0 0 -2px 0;
+    box-sizing: border-box;
+    border-top:  1px solid #000;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+}
+
+.page {
+    width: 210mm;
+    height: 297mm;
+    box-sizing: border-box;
+    padding: 0 20mm 20mm;
+    page-break-after: always;
+}
+.report_box{
+    min-height: 237px;
+}
+
+
+.page:last-child {
+    page-break-after: auto;
+}
+
+.page:not(:first-child){
+    padding: 60mm 20mm 20mm !important;
+}
+
+
+@page {
+    size: A4 portrait;
+    margin: 12mm;
+}
+
+@media print {
+    .no_print {
+        display: none;
+    }
+    .base {
+        min-height: 237mm;
+    }
+    
+    
+}
